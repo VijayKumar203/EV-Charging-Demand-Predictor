@@ -11,6 +11,7 @@
 
 ## 🔍 Key Code Additions
 
+```python
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 df['county_encoded'] = le.fit_transform(df['County'])

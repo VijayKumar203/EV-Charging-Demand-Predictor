@@ -1,50 +1,24 @@
-# 🔋 EV Adoption & Charging Demand Forecasting
-
-This project aims to predict the future adoption of Electric Vehicles (EVs) and estimate corresponding charging demand using historical data and machine learning techniques. The insights can assist in infrastructure planning, policy-making, and supporting EV ecosystem development.
 
 ---
 
-## 🚀 Project Objectives
+### ✅ 2. **Week 1 `README.md`**  
+📁 Path: `/week1/README.md`
 
-- Forecast EV vehicle adoption over time.
-- Estimate charging station demand based on adoption trends.
-- Visualize trends and model accuracy for better understanding.
-- Help support sustainable energy and transportation goals.
+```markdown
+# Week 1: Data Preprocessing & Initial Model Development 🧪
 
----
+## ✅ Tasks Completed
 
-## 🧠 Techniques Used
+- Loaded the dataset and explored key columns like `Date`, `County`, `Total Vehicles`, `Electric Vehicle (EV) Total`, and `Non-Electric Vehicle Total`.
+- Converted `Date` into datetime format and extracted the year.
+- Handled data type issues (e.g., converting string values with commas into integers).
+- Added `county_encoded` column using `LabelEncoder` to prepare the data for modeling.
+- Performed initial train-test split and used `XGBRegressor` for model training.
+- Evaluated performance using MAE and R² score.
 
-- **Data Preprocessing & Cleaning**
-- **Exploratory Data Analysis (EDA)**
-- **Regression Modeling** (e.g., Linear Regression, XGBoost)
-- **Time Series Forecasting** (optional depending on your notebook)
-- **Performance Metrics**: R² Score, MAE, RMSE
+## 🔍 Key Code Additions
 
----
-
-## 🛠️ Tools & Technologies
-
-- Python
-- Jupyter Notebook
-- Pandas, NumPy
-- Scikit-learn
-- Matplotlib, Seaborn
-- XGBoost (if used)
-- Statsmodels (if time series is involved)
-
----
-
-## 📁 Project Structure
-
-```bash
-EV-Adoption-Forecasting/
-├── EV_Adoption_Forecasting.ipynb     # Main notebook
-├── data/
-│   └── ev_data.csv (example dataset)
-├── models/
-│   └── model.pkl (saved ML model - optional)
-├── images/
-│   └── charts/plots used in the notebook or README
-├── requirements.txt
-└── README.md
+```python
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+df['county_encoded'] = le.fit_transform(df['County'])

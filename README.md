@@ -1,50 +1,40 @@
-# 🔋 EV Adoption & Charging Demand Forecasting
+# EV Charging Demand Predictor 🚗⚡
 
-This project aims to predict the future adoption of Electric Vehicles (EVs) and estimate corresponding charging demand using historical data and machine learning techniques. The insights can assist in infrastructure planning, policy-making, and supporting EV ecosystem development.
+This repository contains a Machine Learning-based solution to predict Electric Vehicle (EV) demand using historical vehicle registration data and other relevant features. The project is organized into two phases (Week 1 and Week 2), covering data analysis, preprocessing, model development, and result visualization.
 
----
+## 📁 Folder Structure
 
-## 🚀 Project Objectives
+- **Week 1**: Exploratory Data Analysis (EDA), preprocessing, and initial model building.
+- **Week 2**: Model tuning, performance evaluation, and visualizations.
+  
+## 📊 Project Objective
 
-- Forecast EV vehicle adoption over time.
-- Estimate charging station demand based on adoption trends.
-- Visualize trends and model accuracy for better understanding.
-- Help support sustainable energy and transportation goals.
+To build a predictive model that estimates the number of Electric Vehicles (EVs) using features such as total vehicles, non-electric vehicles, year, and location (county).
 
----
-
-## 🧠 Techniques Used
-
-- **Data Preprocessing & Cleaning**
-- **Exploratory Data Analysis (EDA)**
-- **Regression Modeling** (e.g., Linear Regression, XGBoost)
-- **Time Series Forecasting** (optional depending on your notebook)
-- **Performance Metrics**: R² Score, MAE, RMSE
-
----
-
-## 🛠️ Tools & Technologies
+## 🛠️ Technologies Used
 
 - Python
-- Jupyter Notebook
 - Pandas, NumPy
-- Scikit-learn
 - Matplotlib, Seaborn
-- XGBoost (if used)
-- Statsmodels (if time series is involved)
+- scikit-learn
+- XGBoost
+
+## 🔍 Key Features
+
+- Data cleaning and type conversions
+- Label encoding of categorical variables
+- Model training using XGBoost
+- Performance metrics: MAE, R² Score
+- Visualizations for insights
+
+## 📈 Final Outcome
+
+A model capable of predicting EV adoption trends with a focus on supporting EV infrastructure planning.
 
 ---
 
-## 📁 Project Structure
+## 🚀 Getting Started
 
 ```bash
-EV-Adoption-Forecasting/
-├── EV_Adoption_Forecasting.ipynb     # Main notebook
-├── data/
-│   └── ev_data.csv (example dataset)
-├── models/
-│   └── model.pkl (saved ML model - optional)
-├── images/
-│   └── charts/plots used in the notebook or README
-├── requirements.txt
-└── README.md
+git clone https://github.com/VijayKumar203/EV-Charging-Demand-Predictor.git
+cd EV-Charging-Demand-Predictor

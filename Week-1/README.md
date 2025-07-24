@@ -25,8 +25,4 @@ This folder contains the Week 1 work for the **EV Charging Demand Predictor** pr
 
 - Extracted the **Year** from the `Date` column
 - Encoded the `County` column using `LabelEncoder` to prepare it for modeling:
-  
-  ```python
-  from sklearn.preprocessing import LabelEncoder
-  le = LabelEncoder()
-  df['county_encoded'] = le.fit_transform(df['County'])
+

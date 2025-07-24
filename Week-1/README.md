@@ -1,10 +1,3 @@
-
----
-
-### ✅ 2. **Week 1 `README.md`**  
-📁 Path: `/week1/README.md`
-
-```markdown
 # Week 1: Data Preprocessing & Initial Model Development 🧪
 
 ## ✅ Tasks Completed
@@ -18,7 +11,6 @@
 
 ## 🔍 Key Code Additions
 
-```python
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 df['county_encoded'] = le.fit_transform(df['County'])

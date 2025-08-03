@@ -31,10 +31,13 @@ In Week 3, we developed an **interactive web application** using **Streamlit** t
    python -m venv venv
    venv\Scripts\activate    # for Windows
 2. **Install dependencies:**
+   ```bash
     pip install -r requirements.txt
 3. **Run the Streamlit app:**
+   ```bash
     streamlit run app.py
-📈 Output Preview
+
+## 📈 Output Preview
 Dropdown to choose county
 
 Graphs showing:
@@ -45,7 +48,7 @@ Trends for each model
 
 Insights into how different counties demand vary
 
-💡 Improvements in Week 3
+## 💡 Improvements in Week 3
 Integrated LabelEncoder to fix data format issues.
 
 Improved user experience with clear visualization.
@@ -54,7 +57,7 @@ Addressed and fixed compatibility errors between model versions.
 
 App now supports error-handling and works in isolated virtual environments.
 
-📂 Files Included
+## 📂 Files Included
 app.py: Main Streamlit application.
 
 preprocessed_ev_data.csv: Dataset with EV charging demand and county info.
